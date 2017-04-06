@@ -22,13 +22,13 @@ if(strlen($name)==0 || strlen($content)==0 || strlen($type)==0 || strlen($contac
     echo json_encode($data);
     return;
 }else{
-    $title=$name." 在蜂享网站留言啦!";
+    $title=$name." 在xxx网站留言啦!";
     $body="姓名: ".$name."<br><br>"."联系方式：".$type." --- ".$contact."<br><br>";
     $body=$body."留言内容: ".$content."<br><br>";
 
     $body=$body."<hr>邮件来自系统自动发送,请勿回复!—— Powered by Postbird";
-    $url='452965104@qq.com';
-//    $url='ptbird@yeah.net';
+    $url='xxx65104@qq.com';
+//    $url='xxxrd@yeah.net';
     $flag = sendMail($url,$title,$body);
     if($flag){
         $data=[
