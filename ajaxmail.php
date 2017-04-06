@@ -28,7 +28,7 @@ if(strlen($name)==0 || strlen($content)==0 || strlen($type)==0 || strlen($contac
 
     $body=$body."<hr>邮件来自系统自动发送,请勿回复!—— Powered by Postbird";
     $url='xxx65104@qq.com';
-//    $url='xxxrd@yeah.net';
+//    $url='xxxxxx@yeah.net';
     $flag = sendMail($url,$title,$body);
     if($flag){
         $data=[
